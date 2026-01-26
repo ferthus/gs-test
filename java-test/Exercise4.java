@@ -30,7 +30,7 @@ import static java.util.stream.Collectors.toList;
  *  Entry: [-1, -8, -3, 3, 0, 1, 5, 4, 11, -2, -11, -7, -6, -5, -4]
  *  Output: [0, -11, 1, -8, 3, -7, 4, -6, 5, -5, 11, -4, -3, -2, -1]
  */
-public class Solution {
+public class Exercise4 {
 
   public static List<Integer> applyStoreRules(List<Integer> input) {
     ArrayList<Integer> result = new ArrayList();

@@ -8,3 +8,5 @@ find . -size +1k -exec ls -la {} \;
 find . -size +1k -exec ls -name "*.log" -la {} \;
 
 ps | awk '{printf("%s\t%s\n", $1, $3)}' 
+
+sed -i '' '/^\s*$/d' "file1.txt"
