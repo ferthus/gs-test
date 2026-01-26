@@ -1,0 +1,7 @@
+DDL, DML
+Delete
+Truncate
+Exercises
+Rank
+row_number
+dense_rank

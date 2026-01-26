@@ -57,6 +57,9 @@ sed -i '' '5d' file.txt
 #2.8.2 Delete the last line from a file
 sed -i '' '$d' "fruits.txt"
 
+#2..8.3 Replace text
+sed -i '/text_to_be_replaced/c\new_text' fruits.txt
+
 #2.9 How to check the os and kernel version
 uname -r
 cat /etc/os-release

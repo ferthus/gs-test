@@ -44,7 +44,15 @@ alter table cars_2 add column tmp_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY FIR
 delete from cars_2 where tmp_id not in (
   select max(tmp_id) from cars_2 group by id, model, brand, color, make
 );
+
 alter table cars_2 drop column tmp_id;
+
+/*
+ 1. Distinct sobre los campos repetidos
+ 2. Crear una tabla temporal insertando los row del paso anterior
+ 3. Delete a la tabla original
+ 4. Insert INTO del la tabla temporal hacia la tabla original.
+ */
 
 
 -- 3rd problem
