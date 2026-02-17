@@ -1,6 +1,6 @@
 itil
 notas
 notes
-.class
+**/*.class
 .DS_Store
 .desktop
