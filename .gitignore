@@ -4,3 +4,6 @@ notes
 **/*.class
 .DS_Store
 .desktop
+react-test/**/node_modules/
+react-test/**/dist/
+react-test/**/.vite/
