@@ -15,7 +15,7 @@ function Articles({ articles = [] }) {
         </thead>
         <tbody>
           {articles.map((item, index) => {
-            return <tr data-testid="article" key="article-index">
+            return <tr data-testid="article" key={`article-index-${index}`}>
               <td className="border border-gray-300 px-4 py-2" data-testid="article-title">{item.title}</td>
               <td className="border border-gray-300 px-4 py-2" data-testid="article-upvotes">{item.upvotes}</td>
               <td className="border border-gray-300 px-4 py-2" data-testid="article-date">{item.date}</td>
